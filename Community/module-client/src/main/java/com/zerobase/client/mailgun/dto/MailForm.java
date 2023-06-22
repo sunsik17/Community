@@ -1,4 +1,4 @@
-package com.zerobase.common.domain.mailgun.dto;
+package com.zerobase.client.mailgun.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,7 +1,7 @@
 package com.zerobase.user.controller.member;
 
 import com.zerobase.common.domain.member.dto.RegisterMember;
-import com.zerobase.user.application.MemberSignupApplication;
+import com.zerobase.user.application.MemberRegisterApplication;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,11 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/members/register")
 public class MemberRegisterController {
 
-	private final MemberSignupApplication memberSignupApplication;
+	private final MemberRegisterApplication memberRegisterApplication;
 	@PostMapping
 	public ResponseEntity<String> register(
 		@RequestBody RegisterMember.Request request) {
-		memberSignupApplication.register(request);
+		memberRegisterApplication.register(request);
 		return ResponseEntity.ok("회원가입 완료");
 	}
 }
