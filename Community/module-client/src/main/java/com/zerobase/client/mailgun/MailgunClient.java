@@ -1,7 +1,7 @@
-package com.zerobase.user.client;
+package com.zerobase.client.mailgun;
 
 
-import com.zerobase.common.domain.mailgun.dto.MailForm;
+import com.zerobase.client.mailgun.dto.MailForm;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.cloud.openfeign.SpringQueryMap;

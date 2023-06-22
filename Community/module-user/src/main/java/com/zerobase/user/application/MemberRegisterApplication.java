@@ -1,9 +1,9 @@
 package com.zerobase.user.application;
 
-import com.zerobase.common.domain.mailgun.dto.MailForm;
+import com.zerobase.client.mailgun.dto.MailForm;
 import com.zerobase.common.domain.member.Member;
 import com.zerobase.common.domain.member.dto.RegisterMember;
-import com.zerobase.user.client.MailgunClient;
+import com.zerobase.client.mailgun.MailgunClient;
 import com.zerobase.user.service.member.MemberRegisterService;
 import com.zerobase.user.service.member.VerifyService;
 import lombok.RequiredArgsConstructor;
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-public class MemberSignupApplication {
+public class MemberRegisterApplication {
 
 	private static final String VERIFICATION_MAIL_SUBJECT = "Verification Email!";
 
