@@ -54,6 +54,6 @@ project(':module-admin') {
 project(':module-user') {
     dependencies {
         implementation project(':module-common')
-        implementation project(':module-client')
+        implementation project(':module-client:mailgun-client')
     }
 }
